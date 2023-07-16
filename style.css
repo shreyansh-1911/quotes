@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.container{
+    align-items: center;
+    width: 600px;
+    padding: 15px 40px 40px;
+    background-color: aliceblue;
+    justify-content: center;
+    border-radius: 30px 0px 30px 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    animation: top 3s linear infinite;
+}
+@keyframes top{
+    0%{
+        top: 50%;
+    }
+    50%{
+        top: 53%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 3px;
+    background-color: goldenrod;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    color: gold;
+    font-family: 'Lugrasimo', cursive;
+}
+h2::after , h2::before{
+    content: '"';
+}
+h3{
+    float: right;
+    font-size: 20px;
+    position: relative;
+}
+h3::before{
+    content: '';
+    width: 18px;
+    height: 1px;
+    left: -20px;
+    top: 50%;
+    background-color: black;
+    position: absolute;
+    transform: translateY(50%);
+}
+button:nth-child(1){
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: goldenrod;
+    font-size: 19px;
+    cursor: pointer;
+}
+button:nth-child(2){
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 19px;
+    cursor: pointer;
+}
+button img{
+    width: 16px;
+}
+.btn{
+    margin: 30px 0px 0px 40px;
+    justify-content: center;
+}
